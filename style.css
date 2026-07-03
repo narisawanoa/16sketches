@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+.poster-container {
+  position: relative;
+  width: 2088px;
+  height: 3272px;
+}
+
+.layout-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
