@@ -18,3 +18,13 @@ body {
   height: 100%;
   display: block;
 }
+
+#sketch4-container {
+  position: absolute;
+  left: 1155.63px;
+  top: 304.15px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.34);
+  transform-origin: top left;
+}
