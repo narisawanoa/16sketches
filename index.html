@@ -6,12 +6,51 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="poster-container">
-    <img src="assets/aiLayout-v2.svg" class="layout-bg" alt="poster layout">
-    <div id="sketch4-container" class="sketch-slot"></div>
+  <div class="poster-wrapper">
+    <div class="poster-container" id="poster">
+      <img src="assets/aiLayout-v2.svg" class="layout-bg" alt="poster layout">
+      <div id="sketch4-container" class="sketch-slot"></div>
+      <div id="sketch8-container" class="sketch-slot"></div>
+      <div id="sketch12-container" class="sketch-slot"></div>
+      <div id="sketch16-container" class="sketch-slot"></div>
+      <div id="sketch3-container" class="sketch-slot"></div>
+      <div id="sketch6-container" class="sketch-slot"></div>
+      <div id="sketch7-container" class="sketch-slot"></div>
+      <div id="sketch9-container" class="sketch-slot"></div>
+      <div id="sketch10-container" class="sketch-slot"></div>
+      <div id="sketch11-container" class="sketch-slot"></div>
+      <div id="sketch13-container" class="sketch-slot"></div>
+      <div id="sketch14-container" class="sketch-slot"></div>
+      <div id="sketch15-container" class="sketch-slot"></div>
+    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
   <script src="sketch4.js"></script>
+  <script src="sketch8.js"></script>
+  <script src="sketch12.js"></script>
+  <script src="sketch16.js"></script>
+  <script src="sketch3.js"></script>
+  <script src="sketch6.js"></script>
+  <script src="sketch7.js"></script>
+  <script src="sketch9.js"></script>
+  <script src="sketch10.js"></script>
+  <script src="sketch11.js"></script>
+  <script src="sketch13.js"></script>
+  <script src="sketch14.js"></script>
+  <script src="sketch15.js"></script>
+<script>
+  function scalePoster() {
+    const poster = document.getElementById('poster');
+    const wrapper = document.querySelector('.poster-wrapper');
+    const posterWidth = 2088;
+    const posterHeight = 3272;
+    const scale = Math.max(window.innerWidth / posterWidth, 0.5);
+    poster.style.transform = `scale(${scale})`;
+    wrapper.style.height = `${posterHeight * scale + 60}px`; // +60 accounts for top margin
+  }
+  window.addEventListener('resize', scalePoster);
+  window.addEventListener('load', scalePoster);
+</script>
 </body>
 </html>

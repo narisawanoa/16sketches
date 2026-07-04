@@ -1,16 +1,27 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #111;
+  height: auto;
+}
+
+.poster-wrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #111;
+  padding-right: 40px;
+  padding-bottom: 0;
+  line-height: 0;
 }
 
 .poster-container {
   position: relative;
   width: 2088px;
   height: 3272px;
+  margin: 60px 0 40px 40px;
+  transform-origin: top center;
+  flex-shrink: 0;
 }
 
 .layout-bg {
@@ -19,12 +30,133 @@ body {
   display: block;
 }
 
+#sketch3-container {
+  position: absolute;
+  left: 827.08px;
+  top: 301.05px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.342);
+  transform-origin: top left;
+}
+
 #sketch4-container {
   position: absolute;
   left: 1155.63px;
   top: 304.15px;
   width: 600px;
   height: 400px;
-  transform: scale(0.34);
+  transform: scale(0.342);
   transform-origin: top left;
 }
+
+#sketch6-container {
+  position: absolute;
+  left: 513.43px;
+  top: 508.44px;
+  width: 400px;
+  height: 400px;
+  transform: scale(0.4025);
+  transform-origin: top left;
+}
+
+#sketch7-container {
+  position: absolute;
+  left: 830.37px;
+  top: 509.8px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.3583);
+  transform-origin: top left;
+}
+
+#sketch8-container {
+  position: absolute;
+  left: 1163.97px;
+  top: 512.43px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.343);
+  transform-origin: top left;
+}
+
+#sketch9-container {
+  position: absolute;
+  left: 168.23px;
+  top: 745.35px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.343);
+  transform-origin: top left;
+}
+
+#sketch10-container {
+  position: absolute;
+  left: 506.67px;
+  top: 746.54px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.328);
+  transform-origin: top left;
+}
+
+#sketch11-container {
+  position: absolute;
+  left: 840.82px;
+  top: 738.48px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.343);
+  transform-origin: top left;
+}
+
+#sketch12-container {
+  position: absolute;
+  left: 1166.82px;
+  top: 738.03px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.328);
+  transform-origin: top left;
+}
+
+#sketch13-container {
+  position: absolute;
+  left: 165.88px;
+  top: 935.06px;
+  width: 600px;
+  height: 400px;
+  transform: scale(0.343);
+  transform-origin: top left;
+}
+
+#sketch14-container {
+  position: absolute;
+  left: 505.02px;
+  top: 938.57px;
+  width: 800px;
+  height: 600px;
+  transform: scale(0.24);
+  transform-origin: top left;
+}
+
+#sketch15-container {
+  position: absolute;
+  left: 841.15px;
+  top: 942.13px;
+  width: 800px;
+  height: 600px;
+  transform: scale(0.254);
+  transform-origin: top left;
+}
+
+#sketch16-container {
+  position: absolute;
+  left: 1167.84px;
+  top: 936.98px;
+  width: 800px;
+  height: 600px;
+  transform: scale(0.254);
+  transform-origin: top left;
+}
+
